@@ -5,16 +5,25 @@
 </head>
 <body>
 
-
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Event Categories..">
+<input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search Event Categories..">
 
 <ul id="myUL">
   <li><a href="#" class="header">A</a></li>
-  <li><a href="#">Animals</a></li>
+
+  <div class="dropdown">
+      <li><a href="#"class='dropbtn' onclick="myFunction()">Animals</a></li>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">Volunteer at the animal shelter</a>
+      </div>
+  </div>
+
+  <!-- if Animals is clicked then a dropdown menu will show-->
   <li><a href="#">Arts</a></li>
 
+
+
   <li><a href="#" class="header">B</a></li>
-  <li><a href="#">Bake</a></li>
+  <li><a href="#">Baking</a></li>
 
   <li><a href="#" class="header">C</a></li>
   <li><a href="#">Community</a></li>
