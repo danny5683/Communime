@@ -2,46 +2,59 @@
 <html>
 <head>
     <link rel="stylesheet" href="search.css" type="text/css">
+    <link rel="stylesheet" href="addevent.css" type="text/css">
+  <div class="navbar">
+    <a href="#home">Login</a>
+    <a href="http://localhost:8000/calendar.html">Calendar</a>
+    <a href="#contact">Service Opportunities</a>
+    <a href="#about">Profile</a>
+    <a href="file:///C:/Users/Girls%20Who%20Code/Documents/Communime/totalnumofhours.html">Service Hours Calculator</a>
+    <a href="#about">Add Events</a>
+    <a href="#about">Create Groups</a>
+    <a href="#about">Our Mission</a>
+  </div>
+
+<button onclick= "document.getElementById('id01').style.display='block'"
+  style="width:auto;">Add Event</button>
+
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+    <form class="modal-content animate" action="/action_page.php">
+      <head>
+        <h2>Add Event</h2>
+      </head>
+      <div class="container">
+        <label><b>Date</b></label>
+        <input type="text" placeholder="Enter Date of Event" name="date" required>
+
+        <label><b>Location</b></label>
+        <input type="text" placeholder="Enter Location of Event" name="location" required>
+
+        <label><b>Time</b></label>
+        <input type="text" placeholder="Enter Time of Event" name="time" required>
+
+        <label><b>Information</b></label>
+        <input type="text" placeholder="Enter Information about Event" name="info" required>
+
+        <label><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required>
+
+        <label><b>Phone Number</b></label>
+        <input type="text" placeholder="(555)-555-5555" name="phone number" required>
+
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" onclick="addevent()"class="addeventbtn">Add Event</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
 </head>
-<body>
-  /*<style>
-    body {margin:0;}
-    .navbar {
-      overflow: hidden;
-      background-color: #333;
-      position: fixed;
-      top: 0;
-      width: 100%;
-    }
-
-    .navbar a {
-      float: left;
-      display: block;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-
-    .main {
-      padding: 16px;
-      margin-top: 30px;
-      height: 1500px; /* Used in this example to enable scrolling */
-    }
-    </style>*/
-
-    <div class="navbar">
-      <a href="#home">Login</a>
-      <a href="http://localhost:8000/calendar.html">Calendar</a>
-      <a href="#contact">Service Opportunities</a>
-      <a href="#about">Profile</a>
-      <a href="file:///C:/Users/Girls%20Who%20Code/Documents/Communime/totalnumofhours.html">Service Hours Calculator</a>
-      <a href="#about">Add Events</a>
-      <a href="#about">Create Groups</a>
-      <a href="#about">Our Mission</a>
-    </div>
-
+</body>
 <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search Event Categories..">
 
 <ul id="myUL">
@@ -71,5 +84,6 @@
   <li><a href="#">Crisis Support</a></li>
 </ul>
   <script type="text/javascript" src="search.js"></script>
+  <script type="text/javascript" src="addevent.js"></script>
 </body>
 </html>
