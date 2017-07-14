@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Webpage</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="wrapper">
+
+	<div id="header">
+		<div id="nav"><a href="index.html">Logout</a> |  <a href="#">Contact Me</a> | <a href="#">My Photos</a> | <a href="#">My Videos</a></div>
+		<div id="bg"></div>
+	</div>
+
+	<div id="main-content">
+		<div id="left-column">
+			<div id="logo">
+			Welcome to D'Anny Conley's Profile
+			</div>
+			<div class="box">
+        		<h1>My Commonity Hours</h1>
+        		<p>This is my space. Here are some of my interests: </p>
+				<ul style="margin-top:10px;">
+					<li>Saying "I Could Care Less, Honestly"</li>
+					<li>Singing</li>
+					<li>Playing Solitaire</li>
+					<li>Wearing jeans</li>
+					<li>Nissans</li>
+				</ul>
+			</div>
+			<h2>My Goals</h2>
+			<p>
+        <em><?php
+    // Save the new contents
+
+    $handle = fopen( $file, 'w' );
+    fwrite( $handle, $_REQUEST['editor'] );
+    fclose($handle);
+
+}
+
+// Open the contents of the file
+$handle = fopen( $file, 'r' );
+$contents = fread( $handle, filesize($file) );
+fclose($handle);
+
+?>
+<form action="" method="post">
+<input type="hidden" name="save" value="1" />
+<textarea name="editor" id="editor">
+</textarea>
+<input type="submit" value="Save" />
+</form></em><br/>
+        <em></em><br/>
+        <em</em><br/>
+        <em></em><br/>
+      </p>
+    </div>
+				<img src="http://img189.imageshack.us/img189/9177/paperru.jpg
+" width="139" height="150" style="margin: 0 10px 10px 0;float:left;" />
+		</div>
+		<div id="right-column">
+			<div id="main-image"><img src="http://img38.imageshack.us/img38/7065/michaelscotto.jpg
+" width="160" height="188" /></div>
+			<div class="sidebar">
+	<div id="footer">
+	</div>
+</div>
+
+</body>
+</html>

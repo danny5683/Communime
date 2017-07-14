@@ -1,0 +1,46 @@
+<php
+
+$file = './edit.txt';
+
+if ( isset( $_REQUEST['save'] ) && isset( $_REQUEST['editor'] ) ) {
+    // Save the new contents
+
+    $handle = fopen( $file, 'w' );
+    fwrite( $handle, $_REQUEST['editor'] );
+    fclose($handle);
+
+}
+
+// Open the contents of the file
+$handle = fopen( $file, 'r' );
+$contents = fread( $handle, filesize($file) );
+fclose($handle);
+
+>
+<form action="" method="post">
+<input type="hidden" name="save" value="1" />
+  <h3>A demonstration of how to access a FORM element</h3>
+  <form id="myForm" action="/action_page.php">
+    First name: <input type="text" name="fname" userInput ><br>
+    Last name: <input type="text" name="lname" userInput ><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <p>Finish Edit "Done"</p>
+
+  <button onclick="myFunction()">done</button>
+
+  <p id="demo"></p>
+
+  <script>
+  function myFunction() {
+      var x = document.getElementById("myForm").action;
+      document.getElementById("demo").innerHTML = x;
+  }
+  </script>
+
+  </body>
+  </html>
+</textarea>
+<input type="submit" value="Save" />
+</form>
