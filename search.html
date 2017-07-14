@@ -13,48 +13,6 @@
     <a href="#about">Create Groups</a>
     <a href="#about">Our Mission</a>
   </div>
-
-<button onclick= "document.getElementById('id01').style.display='block'"
-  style="width:auto;">Add Event</button>
-
-  <div id="id01" class="modal">
-    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
-    <form class="modal-content animate" action="/action_page.php">
-      <head>
-        <h2>Add Event</h2>
-      </head>
-      <div class="container">
-        <label><b>Date</b></label>
-        <input type="text" placeholder="Enter Date of Event" name="date" required>
-
-        <label><b>Location</b></label>
-        <input type="text" placeholder="Enter Location of Event" name="location" required>
-
-        <label><b>Time</b></label>
-        <input type="text" placeholder="Enter Time of Event" name="time" required>
-
-        <label><b>Information</b></label>
-        <input type="text" placeholder="Enter Information about Event" name="info" required>
-
-        <label><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
-
-        <label><b>Name</b></label>
-        <input type="text" placeholder="Enter Name" name="name" required>
-
-        <label><b>Phone Number</b></label>
-        <input type="text" placeholder="(555)-555-5555" name="phone number" required>
-
-        <div class="clearfix">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-          <button type="submit" onclick="addevent()"class="addeventbtn">Add Event</button>
-        </div>
-      </div>
-    </form>
-  </div>
-
-</head>
-</body>
 <body>
 <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search Event Categories..">
 
@@ -62,27 +20,50 @@
   <li><a href="#" class="header">A</a></li>
 
   <div class="dropdown">
-      <li><a href="#"class='dropbtn' onclick="myFunction()">Animals</a></li>
-      <div id="myDropdown" class="dropdown-content">
+      <li><a href="#"class='dropbtn' onclick="myFunction('animal', 'animals')">Animals</a></li>
+      <div id="animal" class="animals dropdown-content">
         <a href="#">Volunteer at the animal shelter</a>
       </div>
   </div>
 
   <!-- if Animals is clicked then a dropdown menu will show-->
   <div class="dropdown">
-      <li><a href="#"class='dropbtn' onclick="myFunction()">Arts</a></li>
-      <div id="myDropdown" class="dropdown-content">
+      <li><a href="#"class='dropbtn' onclick="myFunction('art', 'arts')">Arts</a></li>
+      <div id="art" class="arts dropdown-content">
         <a href="#"> Community Art Walk </a>
       </div>
   </div>
 
 
   <li><a href="#" class="header">B</a></li>
-  <li><a href="#">Baking</a></li>
+  <div class="dropdown">
+      <li><a href="#"class='dropbtn' onclick="myFunction('baking', 'bake')">Baking</a></li>
+      <div id="baking" class="bake dropdown-content">
+        <a href="#"> Bake for a home </a>
+      </div>
+  </div>
+
+  <div class="dropdown">
+      <li><a href="#"class='dropbtn' onclick="myFunction('blood', 'give')">Blood</a></li>
+      <div id="blood" class="give dropdown-content">
+        <a href="#"> Give Blood Near You</a>
+      </div>
+  </div>
+
 
   <li><a href="#" class="header">C</a></li>
+  <div class="dropdown">
+      <li><a href="#"class='dropbtn' onclick="myFunction('baking', 'bake')">Baking</a></li>
+      <div id="baking" class="bake dropdown-content">
+        <a href="#"> Bake for a home </a>
+      </div>
+  </div>
+
   <li><a href="#">Community</a></li>
   <li><a href="#">Crisis Support</a></li>
+
+  <li><a href="#" class="header">O</a></li>
+  <li><a href="#">Baking</a></li>
 </ul>
   <script type="text/javascript" src="search.js"></script>
   <script type="text/javascript" src="addevent.js"></script>
