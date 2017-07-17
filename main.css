@@ -1,10 +1,10 @@
 body {margin:0;}
 body{
 background-color: #3399ff;
-}
+font-family: 'Muli', sans-serif;}
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #ffffff;
   position: fixed;
   top: 0;
   width: 100%;
@@ -13,7 +13,7 @@ background-color: #3399ff;
 .navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #676868;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;

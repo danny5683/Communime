@@ -8,7 +8,7 @@ function myJsFunction(){
 
 var total = 0;
 function addUp(){
-var addhours = parseInt(document.getElementById('hours').value);
+var addhours = parseFloat(document.getElementById('hours').value);
 var numList = [];
 numList.push(addhours);
 //alert("hi");
