@@ -2,6 +2,7 @@ body {margin:0;}
 body{
 background-color: #add8e6;
 }
+
 .navbar {
   overflow: hidden;
   background-color: #ffffff;
@@ -24,6 +25,13 @@ background-color: #add8e6;
   padding: 1px;
   margin-top: 30px;
   height: 1500px;
+}
+.navbar a.active {
+    background-color: #4CAF50;
+    
+}
+.navbar a:hover {
+  background-color: #d8d8d8;
 }
 
 .number {
