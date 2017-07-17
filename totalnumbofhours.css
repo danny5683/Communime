@@ -1,6 +1,6 @@
 body {margin:0;}
 body{
-background-color: #3399ff;
+background-color: #add8e6;
 }
 .navbar {
   overflow: hidden;
@@ -25,3 +25,9 @@ background-color: #3399ff;
   margin-top: 30px;
   height: 1500px;
 }
+
+.number {
+  background-color: #ADBCE6;
+}
+
+body {font-family: 'Muli', sans-serif;}
