@@ -2,36 +2,87 @@
 <html>
 <head>
     <link rel="stylesheet" href="search.css" type="text/css">
-</head>
+    <link rel="stylesheet" href="addevent.css" type="text/css">
+  <div class="navbar">
+<<<<<<< HEAD
+    <a href="#home">Login</a>
+    <a href="http://localhost:8000/calendar.html">Calendar</a>
+    <a href="#contact">Service Opportunities</a>
+    <a href="#about">Profile</a>
+    <a href="totalnumofhours.html">Service Hours Calculator</a>
+    <a href="#about">Add Events</a>
+    <a href="#about">Create Groups</a>
+    <a href="#about">Our Mission</a>
+=======
+      <a href="calendar.html">Calendar</a>
+      <a href="search.html">Service Opportunies</a>
+      <a href="new profile.html">Your Profile</a>
+      <a href="totalnumofhours.html"">Your Total Hours</a>
+      <a href="index.html">Sign Up/Sign In</a>
+>>>>>>> 2ea3120508a0090b2c550007b7155326dd922ef9
+  </div>
 <body>
+  <font size="+2">
+  <p> By adding the date, number of hours, and event, this will calculate and keep up with your total amount of hours." </p>
 <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search Event Categories..">
 
 <ul id="myUL">
   <li><a href="#" class="header">A</a></li>
 
   <div class="dropdown">
-      <li><a href="#"class='dropbtn' onclick="myFunction()">Animals</a></li>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="#">Volunteer at the animal shelter</a>
+      <li><a href="#"class='dropbtn' onclick="myFunction('animal', 'animals')">Animals</a></li>
+      <div id="animal" class="animals dropdown-content">
+      <li>  <a href='http://www.pawsatlanta.org/volunteer'> Animal volunteering for Atlanta</a></li>
       </div>
   </div>
 
   <!-- if Animals is clicked then a dropdown menu will show-->
   <div class="dropdown">
-      <li><a href="#"class='dropbtn' onclick="myFunction()">Arts</a></li>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="#"> Community Art Walk </a>
+      <li><a href="#"class='dropbtn' onclick="myFunction('art', 'arts')">Arts</a></li>
+      <div id="art" class="arts dropdown-content">
+        <a href="http://artwareforgood.com/global-fundraising/"> Art for change </a>
       </div>
   </div>
 
 
   <li><a href="#" class="header">B</a></li>
-  <li><a href="#">Baking</a></li>
+  <div class="dropdown">
+      <li><a href="#"class='dropbtn' onclick="myFunction('baking', 'bake')">Baking</a></li>
+      <div id="baking" class="bake dropdown-content">
+        <a href="http://join.nokidhungry.org/site/DocServer/Community_Service_Guide.pdf?docID=10473"> No Kid Hungry </a>
+
+      </div>
+  </div>
+
+  <div class="dropdown">
+      <li><a href="#"class='dropbtn' onclick="myFunction('blood', 'give')">Blood</a></li>
+      <div id="blood" class="give dropdown-content">
+        <a href="http://www.redcrossblood.org/students/volunteer"> Give Blood Near You</a>
+      </div>
+  </div>
+
 
   <li><a href="#" class="header">C</a></li>
-  <li><a href="#">Community</a></li>
-  <li><a href="#">Crisis Support</a></li>
+  <div class="dropdown">
+      <li><a href="#"class='dropbtn' onclick="myFunction('baking', 'bake')">Cooking</a></li>
+      <div id="baking" class="bake dropdown-content">
+        <a href="https://healthyschoolscampaign.org/programs/national/cooking-up-change-national/"> Cooking For Change</a>
+      </div>
+  </div>
+  <div class="dropdown">
+      <li><a href="#"class='dropbtn' onclick="myFunction('baking', 'bake')">Crisis Support</a></li>
+      <div id="crisisSupport" class="bake dropdown-content">
+        <a href='https://crisisclinic.org/get-involved/volunteer/#teen'> Help Countries in Need</a>
+      </div>
+  </div>
+  <div class="dropdown">
+      <li><a href="#"class='dropbtn' onclick="myFunction('community ', 'communities')">Community</a></li>
+      <div id="communities" class="communities dropdown-content">
+        <a href="https://www.volunteermatch.org/"> Community Service Finder </a>
+      </div>
+
 </ul>
   <script type="text/javascript" src="search.js"></script>
+  <script type="text/javascript" src="addevent.js"></script>
 </body>
 </html>

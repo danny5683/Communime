@@ -1,5 +1,6 @@
+
 /* Full-width input fields */
-input[type=text] {
+/*input[type=text] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -9,34 +10,34 @@ input[type=text] {
 }
 
 /* Set a style for all buttons */
-button {
+/*button {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 50px 0;
     border: none;
     cursor: pointer;
     width: 100%;
 }
 
 /* Extra styles for the cancel button */
-.cancelbtn {
+/*.cancelbtn {
     padding: 14px 20px;
     background-color: #f44336;
 }
 
 /* Float cancel and add event buttons and add an equal width */
-.cancelbtn,.addeventbtn {float:left;width:50%}
+/*.cancelbtn,.addeventbtn {float:left;width:50%}
 
 /* Add padding to container elements */
-.container {
+/*.container {
     padding: 16px;
 }
 
 /* The Modal (background) */
-.modal {
+/*.modal {
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
+  /*  position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
@@ -79,7 +80,7 @@ button {
     display: table;
 }
 
-/* Change styles for cancel button and signup button on extra small screens */
+/* Change styles for cancel button and add event button on extra small screens */
 @media screen and (max-width: 300px) {
     .cancelbtn, .addeventbtn {
        width: 100%;

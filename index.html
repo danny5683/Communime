@@ -37,6 +37,25 @@ button:hover {
     background-color: #f44336;
 }
 
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
     span.psw {
@@ -47,27 +66,31 @@ button:hover {
        width: 100%;
     }
 }
+
 </style>
 <body>
-
+<center>
 <h2>Welcome to CommuniMe</h2>
+</center>
+<button value="Sign up"
+onclick="window.location.href='signup.html'">Sign Up</button>
   <div class="container">
     <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <input id="jellybean" type="text" placeholder="Enter Username" name="uname" required>
 
     <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input id="pswd" type="password" placeholder="Enter Password" name="psw" required>
 
-    <form>
-<input type="button" value="Click Here to Login in" onclick="window.location.href='https://www.google.com/'" />
-</form>
-    <input type="checkbox" checked="checked"> Remember me
-  </div>
+
+<button onclick="window.location.href='totalnumofhours.html'" > Click Here to Login </button>
+
 
   <div class="container" style="background-color:#f1f1f1">
     <button type="button" class="cancelbtn">Cancel</button>
     <span class="psw">Forgot <a href="#">password?</a></span>
+
   </div>
+
 </form>
 
 </body>
