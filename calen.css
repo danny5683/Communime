@@ -9,6 +9,14 @@ font-family: 'Muli', sans-serif;}
   top: 0;
   width: 100%;
 }
+.navbar a.active {
+    background-color: #4CAF50;
+
+}
+.navbar a:hover {
+  background-color: #d8d8d8;
+}
+
 
 .navbar a {
   float: left;
