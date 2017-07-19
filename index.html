@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <script src="search.js" ></script>
 </head>
 <style>
+body{
+  background-color: #add8e6
+}
+.coom{font-family: 'Lobster', cursive; font-size: 32px}
+p {font-family: 'Muli', sans-serif;}
 form {
     border: 3px solid #f1f1f1;
 }
@@ -18,7 +25,7 @@ input[type=text], input[type=password] {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #6C8790;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -65,12 +72,18 @@ span.psw {
     .cancelbtn {
        width: 100%;
     }
+
+
 }
 
 </style>
 <body>
 <center>
-<h2>Welcome to CommuniMe</h2>
+  <div class="coom">
+<h1 id="welcome">Welcome to CommuniMe</h1>
+</div>
+<p>A place where community service is not a chore</p>
+<p>Using CommuniMe to help the community</p>
 </center>
 <button value="Sign up"
 onclick="window.location.href='signup.html'">Sign Up</button>
@@ -82,7 +95,7 @@ onclick="window.location.href='signup.html'">Sign Up</button>
     <input id="pswd" type="password" placeholder="Enter Password" name="psw" required>
 
 
-<button onclick="window.location.href='totalnumofhours.html'" > Click Here to Login </button>
+<button onclick="window.location.href='new profile.html'" > Click Here to Login </button>
 
 
   <div class="container" style="background-color:#f1f1f1">

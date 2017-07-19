@@ -13,6 +13,9 @@ body, html {
     color: #000;
     line-height: 1.8;
 }
+.slogan{
+  font-size: 22px
+}
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: fixed;
@@ -43,6 +46,18 @@ body, html {
         background-attachment: scroll;
     }
 }
+.button {
+    background-color: #6C8790;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 </style>
 <body style= "background-color:powderblue;">
 
@@ -52,23 +67,27 @@ body, html {
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="calendar.html" class="w3-bar-item w3-button">Calendar</a>
+  <!--  <a href="calendar.html" class="w3-bar-item w3-button">Calendar</a>
     <a href="search.html" class="w3-bar-item w3-button w3-hide-small">Service Opportunities</a>
     <a href="new profile.html" class="w3-bar-item w3-button w3-hide-small">Your Profile</a>
     <a href="totalnumofhours.html" class="w3-bar-item w3-button w3-hide-small">Your Total Hours</a>
-    <a href="2home_page.html" class="w3-bar-item w3-button w3-hide-small"></i>Home</a>
-    <a href="signup.html" class="w3-bar-item w3-button w3-hide-small"></i>Sign Up/Sign In</a>
+    <a href="2home_page.html" class="w3-bar-item w3-button w3-hide-small"></i>Home</a>-->
+
+    <a href="signup.html" class="w3-bar-item w3-button w3-hide-small"></i>Sign Up</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small"></i>Sign In</a>
     </a>
+
   </div>
 
-<!-- Navbar on small screens -->
+<!-- Navbar on small screens--> 
 <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
   <a href="calendar.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Calendar</a>
   <a href="search.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Service Opportunities</a>
   <a href="new profile.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Your Profile</a>
   <a href="totalnumofhours.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Total Hours</a>
-  <a href="2home_page.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
+  <a href="2home_page.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Home</a> 
   <a href="signup.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Sign Up/Sign In</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-hide-small"></i>Sign In</a>
 </div>
 </div>
 
@@ -81,6 +100,10 @@ body, html {
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
+  <center><div class="slogan">
+  <p font-size:16px> Using CommuniMe to Help the Community </p>
+</div>
+</center>
   <h3 class="w3-center">About CommuniME</h3>
        <p class="font-color:w3-white">This webapp allows teens to keep track and find new community serivce opportunites!
          You can search serivce opportunites, have a calendar that shows your service opportunites you have signed up to do.Plus
@@ -130,6 +153,13 @@ body, html {
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide">Teens helping their Community</span>
+    <center>
+    <br>
+    <button class=button onclick="window.location.href='signup.html'">Sign Up</button>
+    <br>
+    <br>
+    <button class=button onclick="window.location.href='index.html'">Login</button>
+  </center>
   </div>
 </div>
 
