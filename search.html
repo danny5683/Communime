@@ -2,7 +2,6 @@
 <html>
 <head>
     <link rel="stylesheet" href="search.css" type="text/css">
-    <link rel="stylesheet" href="addevent.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <div class="navbar">
 
@@ -15,15 +14,14 @@
 
   </div>
 <body>
-  <p> By adding the date, number of hours, and event, this will calculate and keep up with your total amount of hours." </p>
 <div class="demand">
 <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search Event Categories..">
 </div>
 <ul id="myUL">
-    <li><a href="#" class="header">A</a></li>
+    <li style="display:block"><a style="display:block" href="#" class="header">A</a></li>
   </div>
   <div class="dropdown">
-      <li><a href="#"class='dropbtn' onclick="myFunction('animal', 'animals')">Animals</a></li>
+      <li style="display:block;"><a href="#"class='dropbtn' onclick="myFunction('animal', 'animals')">Animals</a></li>
       <div id="animal" class="animals dropdown-content">
       <li>  <a href='https://www.paws.org/get-involved/volunteer/'> PAWS Volunteering</a></li>
       <li><a href="https://www.animalhumanesociety.org/volunteer"> Animal Human Society</a></li>
@@ -32,7 +30,7 @@
 
   <!-- if Animals is clicked then a dropdown menu will show-->
   <div class="dropdown">
-      <li><a href="#"class='dropbtn' onclick="myFunction('art', 'arts')">Arts</a></li>
+      <li  style="display:block;"><a   style="display:block;" href="#"class='dropbtn' onclick="myFunction('art', 'arts')">Arts</a></li>
       <div id="art" class="arts dropdown-content">
         <li> <a href="http://artwareforgood.com/global-fundraising/"> Art for change </a></li>
       </div>
@@ -68,7 +66,7 @@
         <div id="baking" class="bake dropdown-content">
         <li>  <a href="http://join.nokidhungry.org/site/DocServer/Community_Service_Guide.pdf?docID=10473"> No Kid Hungry </a></li>
         <li><a href="http://www.tasteofhome.com/community/cooks-who-care/culinary-volunteer-opportunities"> Cooks Who Care</a></li>
-
+      </div>
 </div>
 <!--<div class="dropdown">
             <li><a href="#"class='dropbtn' onclick="myFunction('crisis', 'relief')">Crisis Relief</a></li>
@@ -77,8 +75,39 @@
 
             </div>
   </div>-->
+  <li><a href="#" class="header">D</a></li>
+  </div>
+  <div class="dropdown">
+      <li><a href="#"class='dropbtn' onclick="myFunction('give', 'donate')">Donate</a></li>
+      <div id="give" class="donate dropdown-content">
+      <li><a href="http://atlantamission.org/ways-to-give/"> Donate other things</a></li>
+      </div>
+  </div>
+
+  <li><a href="#" class="header">E</a></li>
+  </div>
+  <div class="dropdown">
+      <li><a href="#"class='dropbtn' onclick="myFunction('land', 'earth')">Help your Environment</a></li>
+      <div id="land" class="earth dropdown-content">
+      <li><a href="https://www.nature.org/?redirect=https-301"> Make an impact in your community</a></li>
+      </div>
+  </div>
+
+  <li><a href="#" class="header">F</a></li>
+  </div>
+
+  <div class="dropdown">
+      <li><a href="#"class='dropbtn' onclick="myFunction('bank', 'food')">Food Bank</a></li>
+      <div id="food" class="bank dropdown-content">
+      <li>  <a href="http://www.feedingamerica.org/"> Give Blood Near You</a></li>
+      </div>
+  </div>
+  <li><a href="#" class="header">G</a></li>
+  </div>
+  <li><a href="#" class="header">H</a></li>
+  </div>
+
 </ul>
   <script type="text/javascript" src="search.js"></script>
-  <script type="text/javascript" src="addevent.js"></script>
 </body>
 </html>
