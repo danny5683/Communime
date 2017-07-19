@@ -2,12 +2,11 @@
   body{
     background-color: #add8e6
   }
-.demand{
+  body {font-family: 'Muli', sans-serif;}
 
-}
   .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #ffffff;
     position: fixed;
     top: 0;
     width: 100%;
@@ -16,7 +15,7 @@
   .navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #676686;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -28,6 +27,14 @@
     margin-top: 30px;
     height: 1500px; /* Used in this example to enable scrolling */
   }
+  .navbar a.active {
+      background-color: #4CAF50;
+
+  }
+  .navbar a:hover {
+    background-color: #d8d8d8;
+  }
+
 
 #myInput {
     background-image: url('searchicon.png'); /* Add a search icon to input */

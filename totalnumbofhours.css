@@ -2,9 +2,10 @@ body {margin:0;}
 body{
 background-color: #add8e6;
 }
+
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #ffffff;
   position: fixed;
   top: 0;
   width: 100%;
@@ -13,7 +14,7 @@ background-color: #add8e6;
 .navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #676868;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -25,9 +26,66 @@ background-color: #add8e6;
   margin-top: 30px;
   height: 1500px;
 }
+.navbar a.active {
+    background-color: #4CAF50;
+
+}
+.navbar a:hover {
+  background-color: #d8d8d8;
+}
 
 .number {
   background-color: #ADBCE6;
 }
+.formation{
+  border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=float], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button {
+    background-color: #6C8790;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
 
 body {font-family: 'Muli', sans-serif;}

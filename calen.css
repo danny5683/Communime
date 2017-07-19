@@ -1,19 +1,27 @@
 body {margin:0;}
 body{
 background-color: #add8e6;
-}
+font-family: 'Muli', sans-serif;}
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #ffffff;
   position: fixed;
   top: 0;
   width: 100%;
 }
+.navbar a.active {
+    background-color: #4CAF50;
+
+}
+.navbar a:hover {
+  background-color: #d8d8d8;
+}
+
 
 .navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #676868;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
