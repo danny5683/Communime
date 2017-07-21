@@ -18,6 +18,13 @@ for(i=0; i < numList.length; i++){
 }
 
 }
+function openNav() {
+    document.getElementById("mySidenav").style.width = "150px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
 
 //function addhours(){
 //  while (hours > 0):
