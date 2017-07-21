@@ -21,19 +21,26 @@ function searchFunction() {
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction(id, className) {
+
     document.getElementById(id).classList.toggle("show");
 }
 
 // Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+document.onclick = function() {closedropdown()};
 
-    var dropdowns = document.getElementsByClassName(className);
+function closedropdown() {
+  var test = "hello"
+  if (!event.target.matches('.dropbtn')) {
+    var classes = ['animals', 'arts', 'give', 'communities', 'bake'];
     var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+    for (i=0; i < classes.length; i++) {
+      var dropdowns = document.getElementsByClassName(classes[i]);
+      var j;
+      for (j = 0; j < dropdowns.length; j++) {
+        var openDropdown = dropdowns[j];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
       }
     }
   }
